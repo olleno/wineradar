@@ -913,3 +913,15 @@ pre.snippet{white-space:pre-wrap;word-break:break-all;background:var(--land);pad
 @media (max-width:760px){.chips a.chip,.chips .chip{display:inline-flex;align-items:center;min-height:40px;padding:6px 4px}.mainnav a{padding:8px 0}.filters label{min-height:44px;display:inline-flex;align-items:center}table a{display:inline-block;padding:6px 0}}
 .srch-res li.soon{padding:10px 14px;display:flex;flex-direction:column;gap:2px}
 .srch-res li.soon a{display:inline;padding:0;color:var(--accent)}
+/* photo hero (artwork stays underneath as fallback) */
+.art.photo-art{position:relative;overflow:hidden}
+.art.photo-art .hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%;z-index:1}
+
+/* polish: motion, touch feedback, softer depth */
+a,.btn,.card,.chip,.srch input,.langs summary{transition:color .2s cubic-bezier(.16,1,.3,1),background-color .2s cubic-bezier(.16,1,.3,1),border-color .2s cubic-bezier(.16,1,.3,1),transform .2s cubic-bezier(.16,1,.3,1)}
+.btn:active,.card:active,.chip:active{transform:scale(.98)}
+.card:hover{border-color:var(--accent)}
+.srch-res,.langs ul{box-shadow:0 1px 2px rgba(23,19,20,.04),0 8px 24px rgba(23,19,20,.06),0 24px 64px rgba(23,19,20,.08);border-color:rgba(23,19,20,.08)}
+.hero .art.photo-art{box-shadow:0 2px 6px rgba(23,19,20,.05),0 30px 80px -20px rgba(107,22,49,.25)}
+@media (prefers-reduced-motion:no-preference){main h2,.cards,.photostrip{animation:wr-in .6s cubic-bezier(.16,1,.3,1) both}}
+@keyframes wr-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
