@@ -2,4 +2,6 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <sitemap><loc>https://wineradar.net/sitemap-en.xml</loc><lastmod>2026-10-01</lastmod></sitemap>
 <sitemap><loc>https://wineradar.net/sitemap-de.xml</loc><lastmod>2026-10-01</lastmod></sitemap>
+<sitemap><loc>https://wineradar.net/sitemap-nl.xml</loc><lastmod>2026-10-01</lastmod></sitemap>
+<sitemap><loc>https://wineradar.net/sitemap-sv.xml</loc><lastmod>2026-10-01</lastmod></sitemap>
 </sitemapindex>

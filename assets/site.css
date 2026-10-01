@@ -930,3 +930,5 @@ a,.btn,.card,.chip,.srch input,.langs summary{transition:color .2s cubic-bezier(
 .letter{border-top:1px solid var(--line);padding:2.5rem 0;margin-top:2rem}.letter h2{margin:0 0 .4rem}.letter p{margin:0 0 1rem;max-width:40em;color:var(--muted)}
 .letter form{display:flex;gap:.5rem;flex-wrap:wrap;max-width:32rem}.letter input[type=email]{flex:1 1 14rem;min-height:44px;padding:0 .8rem;border:1px solid var(--line2);font:inherit;background:var(--bg)}
 .letter .hp{position:absolute;left:-9999px;width:1px;height:1px}.letter .ok{color:var(--accent);font-weight:600;margin:0}
+.glance{border:1px solid var(--line2);padding:1rem 1.2rem;margin:1.2rem 0 1.4rem;max-width:44rem;background:var(--bg)}.glance h2{font-size:1rem;margin:0 0 .5rem;letter-spacing:.02em}
+.glance dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.2rem}.glance dl div{display:contents}.glance dt{color:var(--muted)}.glance dd{margin:0}
