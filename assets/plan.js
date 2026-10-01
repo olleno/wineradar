@@ -70,10 +70,11 @@
       var gl='https://www.google.com/maps/dir/?api=1&origin='+B.p[0]+','+B.p[1]+'&destination='+B.p[0]+','+B.p[1]+'&waypoints='+encodeURIComponent(wps)+'&travelmode='+mode;
       var li=pl.stops.map(function(s){var w=s.k==='w';return '<li><span class="k">'+(w?(s.x[4]?'<span class="stars">'+'★'.repeat(s.x[4])+'</span>':'·'):esc(t.lunch))+'</span> '+link(s.x[2],s.x[8])+' <span class="muted">'+esc(s.x[3])+'</span></li>';}).join('');
       if(pl.dinner)li+='<li><span class="k">'+esc(t.dinner)+'</span> '+link(pl.dinner[2],pl.dinner[8])+' <span class="muted">'+esc(pl.dinner[3])+'</span></li>';
-      out.insertAdjacentHTML('beforeend','<section class="day" id="pday'+d+'" style="border-top-color:'+c+'"><h3>'+esc(f(t.day,{n:d+1}))+' <span class="muted">· <span class="km">'+esc(f(t.approx_km,{k:pl.km}))+'</span></span></h3><ol class="stops">'+li+'</ol><p><a href="'+esc(gl)+'" target="_blank" rel="noopener">'+esc(t.route_map)+' ↗</a></p></section>');
+      out.insertAdjacentHTML('beforeend','<section class="day" id="pday'+d+'" style="border-top-color:'+c+'"><h3>'+esc(f(t.day,{n:d+1}))+' <span class="muted">· <span class="km">'+esc(f(t.approx_km,{k:pl.km}))+'</span></span></h3><ol class="stops">'+li+'</ol><p><a href="'+esc(gl)+'" target="_blank" rel="noopener">'+esc(t.route_map)+' ↗</a> · <a href="#" class="gpx" data-day="'+d+'">GPX ↓</a></p></section>');
     });
     if(!plans.length)out.innerHTML='<p class="none">'+esc(t.p_none)+'</p>';
     var prof=mode==='bicycling'?'routed-bike':(mode==='walking'?'routed-foot':'routed-car');
+    lastPlans=plans;
     plans.forEach(function(pl,d){routeDay(pl,d,prof,run.id);});
     map.fitBounds(L.latLngBounds(bounds).pad(0.15));
   }
@@ -88,6 +89,14 @@
         var el=document.querySelector('#pday'+d+' .km');if(el)el.textContent=kmv+' km';
       }).catch(function(){});
   }
+  /* GPX file of a day's route, for bike computers and map apps (works offline once saved) */
+  var lastPlans=[];
+  document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a.gpx');if(!a)return;ev.preventDefault();
+    var pl=lastPlans[+a.dataset.day];if(!pl)return;var ll=pl.line.getLatLngs();
+    var wpt=pl.stops.map(function(s){return '<wpt lat="'+s.x[0]+'" lon="'+s.x[1]+'"><name>'+esc(s.x[2])+'</name></wpt>';}).join('');
+    var trk=ll.map(function(q){return '<trkpt lat="'+q.lat.toFixed(6)+'" lon="'+q.lng.toFixed(6)+'"/>';}).join('');
+    var x='<?xml version="1.0" encoding="UTF-8"?><gpx version="1.1" creator="Wine Radar" xmlns="http://www.topografix.com/GPX/1/1">'+wpt+'<trk><name>Wine Radar '+esc(f(t.day,{n:+a.dataset.day+1}))+'</name><trkseg>'+trk+'</trkseg></trk></gpx>';
+    var u=URL.createObjectURL(new Blob([x],{type:'application/gpx+xml'})),l=document.createElement('a');l.href=u;l.download='wineradar-day'+(+a.dataset.day+1)+'.gpx';document.body.appendChild(l);l.click();l.remove();setTimeout(function(){URL.revokeObjectURL(u);},2000);});
   run.id=0;var _run=run;run=function(e){_run.id=(_run.id||0)+1;run.id=_run.id;return _run(e);};
   /* shareable trips: the choices live in the address (#b=v3&m=20&d=2&w=any&f=any) */
   var IDS={b:'p-base',m:'p-mode',d:'p-days',w:'p-wine',f:'p-food'};

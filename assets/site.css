@@ -908,3 +908,8 @@ pre.snippet{white-space:pre-wrap;word-break:break-all;background:var(--land);pad
 .mainnav a.here{font-weight:700}
 .langs ul{max-height:70vh;overflow:auto}
 @media (max-width:760px){.srch{order:4;width:100%;margin:8px 0 0}.srch input{width:100%;box-sizing:border-box}.srch-res{left:0;right:auto;width:100%}.langs ul{columns:1;max-height:60vh}}
+.filters label.sel select{font:inherit;padding:4px 6px;border:1px solid var(--line2);background:var(--surface);color:var(--ink)}
+/* bigger touch targets on phones */
+@media (max-width:760px){.chips a.chip,.chips .chip{display:inline-flex;align-items:center;min-height:40px;padding:6px 4px}.mainnav a{padding:8px 0}.filters label{min-height:44px;display:inline-flex;align-items:center}table a{display:inline-block;padding:6px 0}}
+.srch-res li.soon{padding:10px 14px;display:flex;flex-direction:column;gap:2px}
+.srch-res li.soon a{display:inline;padding:0;color:var(--accent)}
