@@ -27,6 +27,52 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Podersdorf am See](https://wineradar.net/austria/burgenland/village/podersdorf-am-see/)
 - [Wineries in Purbach am Neusiedler See](https://wineradar.net/austria/burgenland/village/purbach-am-neusiedler-see/)
 
+## Kamptal (157 wineries, 19 villages)
+
+- [Kamptal wine region](https://wineradar.net/austria/kamptal/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/kamptal/map/)
+- [Wine trip planner](https://wineradar.net/austria/kamptal/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/kamptal/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/kamptal/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/kamptal/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/kamptal/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/kamptal/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/kamptal/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/kamptal/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/kamptal/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/kamptal/books-and-guides/)
+- [Wineries in Langenlois](https://wineradar.net/austria/kamptal/village/langenlois/)
+- [Wineries in Straß im Straßertale](https://wineradar.net/austria/kamptal/village/strass-im-strassertale/)
+- [Wineries in Gobelsburg](https://wineradar.net/austria/kamptal/village/gobelsburg/)
+- [Wineries in Zöbing](https://wineradar.net/austria/kamptal/village/zoebing/)
+- [Wineries in Lengenfeld](https://wineradar.net/austria/kamptal/village/lengenfeld/)
+- [Wineries in Engabrunn](https://wineradar.net/austria/kamptal/village/engabrunn/)
+- [Wineries in Schiltern](https://wineradar.net/austria/kamptal/village/schiltern/)
+- [Wineries in Schönberg am Kamp](https://wineradar.net/austria/kamptal/village/schoenberg-am-kamp/)
+
+## Kremstal (168 wineries, 25 villages)
+
+- [Kremstal wine region](https://wineradar.net/austria/kremstal/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/kremstal/map/)
+- [Wine trip planner](https://wineradar.net/austria/kremstal/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/kremstal/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/kremstal/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/kremstal/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/kremstal/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/kremstal/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/kremstal/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/kremstal/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/kremstal/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/kremstal/books-and-guides/)
+- [Wineries in Krems an der Donau](https://wineradar.net/austria/kremstal/village/krems-an-der-donau/)
+- [Wineries in Rohrendorf bei Krems](https://wineradar.net/austria/kremstal/village/rohrendorf-bei-krems/)
+- [Wineries in Krustetten](https://wineradar.net/austria/kremstal/village/krustetten/)
+- [Wineries in Palt](https://wineradar.net/austria/kremstal/village/palt/)
+- [Wineries in Stratzing](https://wineradar.net/austria/kremstal/village/stratzing/)
+- [Wineries in Droß](https://wineradar.net/austria/kremstal/village/dross/)
+- [Wineries in Furth bei Göttweig](https://wineradar.net/austria/kremstal/village/furth-bei-goettweig/)
+- [Wineries in Höbenbach](https://wineradar.net/austria/kremstal/village/hoebenbach/)
+
 ## Wachau (194 wineries, 17 villages)
 
 - [Wachau wine region](https://wineradar.net/austria/wachau/): overview, grapes, sub-regions
