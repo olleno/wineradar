@@ -1,0 +1,55 @@
+# Wine Radar
+
+> Every winery in Europe's wine regions on a map: producer pages with location, website, guide ratings and press, plus places to eat and stay, trip planning and books. Independent and free to use. Data from Falstaff and other wine guides, the wineries' own websites, OpenStreetMap and Wikimedia Commons; checked weekly.
+
+Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://wineradar.net/how-we-work/
+
+## Burgenland (667 wineries, 90 villages)
+
+- [Burgenland wine region](https://wineradar.net/austria/burgenland/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/burgenland/map/)
+- [Wine trip planner](https://wineradar.net/austria/burgenland/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/burgenland/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/burgenland/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/burgenland/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/burgenland/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/burgenland/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/burgenland/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/burgenland/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/burgenland/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/burgenland/books-and-guides/)
+- [Wineries in Gols](https://wineradar.net/austria/burgenland/village/gols/)
+- [Wineries in Illmitz](https://wineradar.net/austria/burgenland/village/illmitz/)
+- [Wineries in Rust](https://wineradar.net/austria/burgenland/village/rust/)
+- [Wineries in Deutschkreutz](https://wineradar.net/austria/burgenland/village/deutschkreutz/)
+- [Wineries in Mörbisch am See](https://wineradar.net/austria/burgenland/village/moerbisch-am-see/)
+- [Wineries in Jois](https://wineradar.net/austria/burgenland/village/jois/)
+- [Wineries in Podersdorf am See](https://wineradar.net/austria/burgenland/village/podersdorf-am-see/)
+- [Wineries in Purbach am Neusiedler See](https://wineradar.net/austria/burgenland/village/purbach-am-neusiedler-see/)
+
+## Wachau (194 wineries, 17 villages)
+
+- [Wachau wine region](https://wineradar.net/austria/wachau/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/wachau/map/)
+- [Wine trip planner](https://wineradar.net/austria/wachau/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/wachau/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/wachau/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/wachau/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/wachau/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/wachau/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/wachau/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/wachau/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/wachau/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/wachau/books-and-guides/)
+- [Wineries in Spitz](https://wineradar.net/austria/wachau/village/spitz/)
+- [Wineries in Weißenkirchen in der Wachau](https://wineradar.net/austria/wachau/village/weissenkirchen-in-der-wachau/)
+- [Wineries in Dürnstein](https://wineradar.net/austria/wachau/village/duernstein/)
+- [Wineries in Wösendorf](https://wineradar.net/austria/wachau/village/woesendorf/)
+- [Wineries in Rossatz](https://wineradar.net/austria/wachau/village/rossatz/)
+- [Wineries in Mitterarnsdorf](https://wineradar.net/austria/wachau/village/mitterarnsdorf/)
+- [Wineries in Mautern an der Donau](https://wineradar.net/austria/wachau/village/mautern-an-der-donau/)
+- [Wineries in Joching](https://wineradar.net/austria/wachau/village/joching/)
+
+## For wineries
+
+- [Wine Radar Plus for wineries](https://wineradar.net/for-wineries/): photos, opening hours, booking and events on the winery page
