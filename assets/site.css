@@ -961,3 +961,15 @@ ol.nearby li.k-s .nr-nm::before{background:var(--stay)}
   .nr-go{padding:6px 0}
   .offline .btn.ghost{text-align:left;padding-inline:0}
 }
+
+/* Checka in på vingården och Min vinresa */
+.checkin{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:14px 0 4px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--accent-soft)}
+.checkin .ci-status{color:var(--ink);font-size:.95rem}
+.checkin .ci-trip{margin-left:auto;font-size:.92rem}
+.checkin.done .btn{background:var(--vine);border-color:var(--vine)}
+ul.badges{list-style:none;padding:0;margin:8px 0 14px;display:flex;flex-wrap:wrap;gap:8px}
+ul.badges li{padding:6px 12px;border-radius:999px;border:1px dashed var(--line2);color:var(--muted);font-size:.92rem}
+ul.badges li.won{border:1px solid var(--gold);color:var(--ink);background:var(--surface)}
+ul.badges li.won::before{content:"★ ";color:var(--gold)}
+ol.visits{padding-left:1.3em}ol.visits li{margin:6px 0}
+#trip .map.small{margin:10px 0 14px}
