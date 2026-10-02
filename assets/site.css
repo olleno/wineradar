@@ -932,3 +932,32 @@ a,.btn,.card,.chip,.srch input,.langs summary{transition:color .2s cubic-bezier(
 .letter .hp{position:absolute;left:-9999px;width:1px;height:1px}.letter .ok{color:var(--accent);font-weight:600;margin:0}
 .glance{border:1px solid var(--line2);padding:1rem 1.2rem;margin:1.2rem 0 1.4rem;max-width:44rem;background:var(--bg)}.glance h2{font-size:1rem;margin:0 0 .5rem;letter-spacing:.02em}
 .glance dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.2rem}.glance dl div{display:contents}.glance dt{color:var(--muted)}.glance dd{margin:0}
+
+/* ---- mobil: menyrad längst ner, Nära mig, spara offline ---- */
+.tabbar{display:none}
+.near-list{margin:18px 0 8px}
+.near-list h2{margin:0 0 8px}
+ol.nearby{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+ol.nearby li{display:grid;grid-template-columns:1fr auto;grid-template-areas:"nm dist" "where go";gap:0 12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.nr-nm{grid-area:nm;font-weight:600}
+.nr-where{grid-area:where;font-size:.9rem}
+.nr-dist{grid-area:dist;text-align:right;white-space:nowrap}
+.nr-go{grid-area:go;text-align:right;font-size:.9rem;color:var(--accent);align-self:center}
+ol.nearby li .nr-nm::before{content:"";display:inline-block;width:9px;height:9px;margin-right:8px;vertical-align:1px}
+ol.nearby li.k-w .nr-nm::before{border-radius:50%;background:var(--vine)}
+ol.nearby li.k-e .nr-nm::before{background:var(--gold)}
+ol.nearby li.k-s .nr-nm::before{background:var(--stay)}
+.offline{margin:10px 0 0}
+@media (max-width:700px){
+  .tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:1000;background:var(--surface);border-top:1px solid var(--line);
+          padding:4px 4px calc(4px + env(safe-area-inset-bottom))}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:6px 2px;min-height:48px;justify-content:center;
+            text-decoration:none;color:var(--muted);font-size:.72rem;line-height:1.1;text-align:center}
+  .tabbar a[aria-current]{color:var(--accent)}
+  .tabbar svg{width:24px;height:24px}
+  body:has(.tabbar){padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+  body:has(.tabbar) .top{position:static}      /* menyraden längst ner tar över: sidhuvudet ska inte äta halva skärmen */
+  #near-btn{width:100%;padding:14px 18px;font-size:1rem}
+  .nr-go{padding:6px 0}
+  .offline .btn.ghost{text-align:left;padding-inline:0}
+}
