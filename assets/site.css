@@ -973,3 +973,5 @@ ul.badges li.won{border:1px solid var(--gold);color:var(--ink);background:var(--
 ul.badges li.won::before{content:"★ ";color:var(--gold)}
 ol.visits{padding-left:1.3em}ol.visits li{margin:6px 0}
 #trip .map.small{margin:10px 0 14px}
+ol.toplist{padding-left:1.6em;margin:6px 0 18px}ol.toplist li{margin:7px 0}ol.toplist li .num{display:block;color:var(--muted);font-size:.9rem}
+ol.toplist li:nth-child(-n+3)::marker{color:var(--gold);font-weight:700}
