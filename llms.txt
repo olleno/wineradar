@@ -142,7 +142,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Mautern an der Donau](https://wineradar.net/austria/wachau/village/mautern-an-der-donau/)
 - [Wineries in Joching](https://wineradar.net/austria/wachau/village/joching/)
 
-## Wagram (126 wineries, 36 villages)
+## Wagram (125 wineries, 36 villages)
 
 - [Wagram wine region](https://wineradar.net/austria/wagram/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/wagram/map/)

@@ -69,18 +69,31 @@
     }
   }
 
+  /* Wine Radars märke (glaset med radarbågar), samma som i sidhuvudet; ritas i rutan 130×120 */
+  function logo(g,x,y,s,col){
+    g.save();g.translate(x,y);g.scale(s,s);g.strokeStyle=col;g.fillStyle=col;g.lineWidth=6;g.lineCap='round';
+    [['M70 40 a26 26 0 0 1 26 26',1],['M70 24 a42 42 0 0 1 42 42',.7],['M70 8 a58 58 0 0 1 58 58',.4]].forEach(function(a){g.globalAlpha=a[1];g.stroke(new Path2D(a[0]));});
+    g.globalAlpha=1;g.fill(new Path2D('M44 18h12v22c0 4 10 10 10 22v46a4 4 0 0 1-4 4H38a4 4 0 0 1-4-4V62c0-12 10-18 10-22z'));
+    g.fill(new Path2D('M42 12h16v8H42z'));g.restore();
+  }
+  /* Delningsbilden: hög (1080×1920) så att den passar Instagram Stories; allt viktigt i mitten så att ett vanligt inlägg också blir bra */
   function card(T,L,won){
-    var cv=document.createElement('canvas');cv.width=1080;cv.height=1080;var g=cv.getContext('2d');
-    g.fillStyle='#6b1631';g.fillRect(0,0,1080,1080);
-    g.fillStyle='#fcfbf9';g.textAlign='center';
-    g.font='600 54px system-ui,sans-serif';g.fillText('WINE RADAR',540,140);
-    g.font='800 300px system-ui,sans-serif';g.fillText(String(L.length),540,520);
-    var txt=fill(T.share_txt,{n:L.length}),w=txt.split(' '),line='',y=640;
-    g.font='500 50px system-ui,sans-serif';
-    w.forEach(function(x){var t=line?line+' '+x:x;if(g.measureText(t).width>900){g.fillText(line,540,y);y+=64;line=x;}else line=t;});g.fillText(line,540,y);
-    g.font='400 36px system-ui,sans-serif';g.globalAlpha=.85;
-    won.slice(0,4).forEach(function(b,i){g.fillText('★ '+b[0],540,y+110+i*52);});
-    g.globalAlpha=1;g.font='500 38px system-ui,sans-serif';g.fillText('wineradar.net',540,1030);
+    var W=1080,H=1920,cv=document.createElement('canvas');cv.width=W;cv.height=H;var g=cv.getContext('2d'),ink='#fcfbf9',gold='#ddb767';
+    var gr=g.createLinearGradient(0,0,0,H);gr.addColorStop(0,'#7a1a38');gr.addColorStop(1,'#3e0c1c');g.fillStyle=gr;g.fillRect(0,0,W,H);
+    logo(g,W/2-117,170,1.8,ink);
+    g.fillStyle=ink;g.textAlign='center';g.font='700 58px system-ui,sans-serif';g.fillText('WINE RADAR',W/2,470);
+    /* besökta vingårdar som guldprickar, utplacerade efter verkligt läge */
+    var bx=140,by=560,bw=800,bh=440,la=L.map(function(x){return x.lat;}),lo=L.map(function(x){return x.lon;});
+    var a0=Math.min.apply(0,la),a1=Math.max.apply(0,la),o0=Math.min.apply(0,lo),o1=Math.max.apply(0,lo),k=Math.cos((a0+a1)/2*Math.PI/180);
+    var sx=(o1-o0)*k||1e-3,sy=(a1-a0)||1e-3,sc=Math.min(bw/sx,bh/sy);
+    g.fillStyle=gold;L.forEach(function(x){var px=bx+bw/2+((x.lon-(o0+o1)/2)*k)*sc*(L.length>1?1:0),py=by+bh/2-(x.lat-(a0+a1)/2)*sc*(L.length>1?1:0);g.globalAlpha=.25;g.beginPath();g.arc(px,py,26,0,7);g.fill();g.globalAlpha=1;g.beginPath();g.arc(px,py,11,0,7);g.fill();});
+    g.fillStyle=ink;g.font='800 300px system-ui,sans-serif';g.fillText(String(L.length),W/2,1330);
+    var txt=T.card_txt||fill(T.share_txt,{n:L.length}),w=txt.split(' '),line='',y=1440;
+    g.font='500 52px system-ui,sans-serif';
+    w.forEach(function(x){var t=line?line+' '+x:x;if(g.measureText(t).width>900){g.fillText(line,W/2,y);y+=66;line=x;}else line=t;});g.fillText(line,W/2,y);
+    g.font='400 38px system-ui,sans-serif';
+    won.slice(0,3).forEach(function(b,i){g.fillStyle=gold;g.fillText('★',W/2-g.measureText(b[0]).width/2-30,y+95+i*56);g.fillStyle=ink;g.fillText(b[0],W/2+10,y+95+i*56);});
+    logo(g,W/2-205,1772,.55,ink);g.textAlign='left';g.fillStyle=ink;g.font='600 46px system-ui,sans-serif';g.fillText('wineradar.net',W/2-120,1822);
     return cv;
   }
   function share(T,L,won){
