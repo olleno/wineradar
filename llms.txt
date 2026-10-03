@@ -96,6 +96,29 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Klöch](https://wineradar.net/austria/steiermark/village/kloech/)
 - [Wineries in Sankt Stefan ob Stainz](https://wineradar.net/austria/steiermark/village/sankt-stefan-ob-stainz/)
 
+## Thermenregion (152 wineries, 31 villages)
+
+- [Thermenregion wine region](https://wineradar.net/austria/thermenregion/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/thermenregion/map/)
+- [Wine trip planner](https://wineradar.net/austria/thermenregion/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/thermenregion/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/thermenregion/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/thermenregion/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/thermenregion/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/thermenregion/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/thermenregion/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/thermenregion/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/thermenregion/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/thermenregion/books-and-guides/)
+- [Wineries in Gumpoldskirchen](https://wineradar.net/austria/thermenregion/village/gumpoldskirchen/)
+- [Wineries in Tattendorf](https://wineradar.net/austria/thermenregion/village/tattendorf/)
+- [Wineries in Perchtoldsdorf](https://wineradar.net/austria/thermenregion/village/perchtoldsdorf/)
+- [Wineries in Sooß](https://wineradar.net/austria/thermenregion/village/sooss/)
+- [Wineries in Baden](https://wineradar.net/austria/thermenregion/village/baden/)
+- [Wineries in Guntramsdorf](https://wineradar.net/austria/thermenregion/village/guntramsdorf/)
+- [Wineries in Traiskirchen](https://wineradar.net/austria/thermenregion/village/traiskirchen/)
+- [Wineries in Pfaffstätten](https://wineradar.net/austria/thermenregion/village/pfaffstaetten/)
+
 ## Wachau (194 wineries, 17 villages)
 
 - [Wachau wine region](https://wineradar.net/austria/wachau/): overview, grapes, sub-regions
@@ -118,6 +141,29 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Mitterarnsdorf](https://wineradar.net/austria/wachau/village/mitterarnsdorf/)
 - [Wineries in Mautern an der Donau](https://wineradar.net/austria/wachau/village/mautern-an-der-donau/)
 - [Wineries in Joching](https://wineradar.net/austria/wachau/village/joching/)
+
+## Wagram (126 wineries, 36 villages)
+
+- [Wagram wine region](https://wineradar.net/austria/wagram/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/wagram/map/)
+- [Wine trip planner](https://wineradar.net/austria/wagram/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/wagram/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/wagram/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/wagram/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/wagram/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/wagram/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/wagram/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/wagram/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/wagram/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/wagram/books-and-guides/)
+- [Wineries in Fels am Wagram](https://wineradar.net/austria/wagram/village/fels-am-wagram/)
+- [Wineries in Feuersbrunn](https://wineradar.net/austria/wagram/village/feuersbrunn/)
+- [Wineries in Großriedenthal](https://wineradar.net/austria/wagram/village/grossriedenthal/)
+- [Wineries in Kirchberg am Wagram](https://wineradar.net/austria/wagram/village/kirchberg-am-wagram/)
+- [Wineries in Engelmannsbrunn](https://wineradar.net/austria/wagram/village/engelmannsbrunn/)
+- [Wineries in Großweikersdorf](https://wineradar.net/austria/wagram/village/grossweikersdorf/)
+- [Wineries in Gösing am Wagram](https://wineradar.net/austria/wagram/village/goesing-am-wagram/)
+- [Wineries in Klosterneuburg](https://wineradar.net/austria/wagram/village/klosterneuburg/)
 
 ## Wien (123 wineries, 26 villages)
 
