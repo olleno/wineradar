@@ -119,6 +119,29 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Traiskirchen](https://wineradar.net/austria/thermenregion/village/traiskirchen/)
 - [Wineries in Pfaffstätten](https://wineradar.net/austria/thermenregion/village/pfaffstaetten/)
 
+## Traisental (90 wineries, 26 villages)
+
+- [Traisental wine region](https://wineradar.net/austria/traisental/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/traisental/map/)
+- [Wine trip planner](https://wineradar.net/austria/traisental/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/traisental/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/traisental/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/traisental/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/traisental/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/traisental/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/traisental/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/traisental/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/traisental/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/traisental/books-and-guides/)
+- [Wineries in Traismauer](https://wineradar.net/austria/traisental/village/traismauer/)
+- [Wineries in Nußdorf ob der Traisen](https://wineradar.net/austria/traisental/village/nussdorf-ob-der-traisen/)
+- [Wineries in Reichersdorf](https://wineradar.net/austria/traisental/village/reichersdorf/)
+- [Wineries in Wagram ob der Traisen](https://wineradar.net/austria/traisental/village/wagram-ob-der-traisen/)
+- [Wineries in Inzersdorf ob der Traisen](https://wineradar.net/austria/traisental/village/inzersdorf-ob-der-traisen/)
+- [Wineries in Kuffern](https://wineradar.net/austria/traisental/village/kuffern/)
+- [Wineries in Sitzenberg-Reidling](https://wineradar.net/austria/traisental/village/sitzenberg-reidling/)
+- [Wineries in Wölbling](https://wineradar.net/austria/traisental/village/woelbling/)
+
 ## Wachau (194 wineries, 17 villages)
 
 - [Wachau wine region](https://wineradar.net/austria/wachau/): overview, grapes, sub-regions
