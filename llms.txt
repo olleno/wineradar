@@ -27,6 +27,29 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Podersdorf am See](https://wineradar.net/austria/burgenland/village/podersdorf-am-see/)
 - [Wineries in Purbach am Neusiedler See](https://wineradar.net/austria/burgenland/village/purbach-am-neusiedler-see/)
 
+## Bergland (66 wineries, 51 villages)
+
+- [Bergland wine region](https://wineradar.net/austria/bergland/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/bergland/map/)
+- [Wine trip planner](https://wineradar.net/austria/bergland/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/bergland/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/bergland/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/bergland/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/bergland/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/bergland/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/bergland/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/bergland/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/bergland/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/bergland/books-and-guides/)
+- [Wineries in Klagenfurt am Wörthersee](https://wineradar.net/austria/bergland/village/klagenfurt-am-woerthersee/)
+- [Wineries in Feldkirchen](https://wineradar.net/austria/bergland/village/feldkirchen/)
+- [Wineries in St. Georgen am Längsee](https://wineradar.net/austria/bergland/village/st-georgen-am-laengsee/)
+- [Wineries in St. Paul im Lavanttal](https://wineradar.net/austria/bergland/village/st-paul-im-lavanttal/)
+- [Wineries in Tarrenz](https://wineradar.net/austria/bergland/village/tarrenz/)
+- [Wineries in St. Veit an der Glan](https://wineradar.net/austria/bergland/village/st-veit-an-der-glan/)
+- [Wineries in Wolfsberg](https://wineradar.net/austria/bergland/village/wolfsberg/)
+- [Wineries in Arzl im Pitztal](https://wineradar.net/austria/bergland/village/arzl-im-pitztal/)
+
 ## Carnuntum (73 wineries, 21 villages)
 
 - [Carnuntum wine region](https://wineradar.net/austria/carnuntum/): overview, grapes, sub-regions
@@ -188,7 +211,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Mautern an der Donau](https://wineradar.net/austria/wachau/village/mautern-an-der-donau/)
 - [Wineries in Joching](https://wineradar.net/austria/wachau/village/joching/)
 
-## Wagram (125 wineries, 36 villages)
+## Wagram (126 wineries, 36 villages)
 
 - [Wagram wine region](https://wineradar.net/austria/wagram/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/wagram/map/)
@@ -208,8 +231,8 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Kirchberg am Wagram](https://wineradar.net/austria/wagram/village/kirchberg-am-wagram/)
 - [Wineries in Engelmannsbrunn](https://wineradar.net/austria/wagram/village/engelmannsbrunn/)
 - [Wineries in Großweikersdorf](https://wineradar.net/austria/wagram/village/grossweikersdorf/)
+- [Wineries in Ottenthal](https://wineradar.net/austria/wagram/village/ottenthal/)
 - [Wineries in Gösing am Wagram](https://wineradar.net/austria/wagram/village/goesing-am-wagram/)
-- [Wineries in Klosterneuburg](https://wineradar.net/austria/wagram/village/klosterneuburg/)
 
 ## Weinviertel (501 wineries, 165 villages)
 
