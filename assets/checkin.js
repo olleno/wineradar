@@ -42,7 +42,8 @@
         var m=dist(pos.coords.latitude,pos.coords.longitude,+D.lat,+D.lon),lim=+D.rad+Math.min(pos.coords.accuracy||0,500);
         if(m>lim){st.textContent=fill(T.far,{km:(m/1000).toFixed(m<10000?1:0)});return;}
         var v=load(),first=!v[D.slug];
-        v[D.slug]={n:D.name,t:D.town,r:D.region,lat:+D.lat,lon:+D.lon,u:D.url,d:(v[D.slug]&&v[D.slug].d)||today()};
+        v[D.slug]={n:D.name,t:D.town,r:D.region,rs:D.rs,w:D.slug,lat:+D.lat,lon:+D.lon,u:D.url,d:(v[D.slug]&&v[D.slug].d)||today()};
+        if(window.WRC)window.WRC.checkin(D.rs,D.slug,pos.coords);   /* inloggad: sparas också i kontot (servern kontrollerar platsen igen) */
         save(v);
         st.textContent=fill(T.ok,{n:Object.keys(v).length});
         c.classList.add('done');

@@ -27,6 +27,29 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Podersdorf am See](https://wineradar.net/austria/burgenland/village/podersdorf-am-see/)
 - [Wineries in Purbach am Neusiedler See](https://wineradar.net/austria/burgenland/village/purbach-am-neusiedler-see/)
 
+## Carnuntum (73 wineries, 21 villages)
+
+- [Carnuntum wine region](https://wineradar.net/austria/carnuntum/): overview, grapes, sub-regions
+- [Map of all wineries](https://wineradar.net/austria/carnuntum/map/)
+- [Wine trip planner](https://wineradar.net/austria/carnuntum/trip-planner/)
+- [Wineries open to visitors](https://wineradar.net/austria/carnuntum/wineries-open-to-visitors/)
+- [Organic wineries](https://wineradar.net/austria/carnuntum/organic-wineries/)
+- [Top rated wineries](https://wineradar.net/austria/carnuntum/top-rated-wineries/)
+- [Sweet wine producers](https://wineradar.net/austria/carnuntum/sweet-wine-producers/)
+- [Best restaurants](https://wineradar.net/austria/carnuntum/best-restaurants/)
+- [Heuriger wine taverns](https://wineradar.net/austria/carnuntum/heuriger-wine-taverns/)
+- [Where to stay](https://wineradar.net/austria/carnuntum/where-to-stay/)
+- [Hidden gems](https://wineradar.net/austria/carnuntum/hidden-gems/)
+- [Books and guides](https://wineradar.net/austria/carnuntum/books-and-guides/)
+- [Wineries in Göttlesbrunn](https://wineradar.net/austria/carnuntum/village/goettlesbrunn/)
+- [Wineries in Höflein](https://wineradar.net/austria/carnuntum/village/hoeflein/)
+- [Wineries in Prellenkirchen](https://wineradar.net/austria/carnuntum/village/prellenkirchen/)
+- [Wineries in Stixneusiedl](https://wineradar.net/austria/carnuntum/village/stixneusiedl/)
+- [Wineries in Bruck an der Leitha](https://wineradar.net/austria/carnuntum/village/bruck-an-der-leitha/)
+- [Wineries in Arbesthal](https://wineradar.net/austria/carnuntum/village/arbesthal/)
+- [Wineries in Petronell-Carnuntum](https://wineradar.net/austria/carnuntum/village/petronell-carnuntum/)
+- [Wineries in Wildungsmauer](https://wineradar.net/austria/carnuntum/village/wildungsmauer/)
+
 ## Kamptal (157 wineries, 19 villages)
 
 - [Kamptal wine region](https://wineradar.net/austria/kamptal/): overview, grapes, sub-regions
@@ -50,7 +73,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Schiltern](https://wineradar.net/austria/kamptal/village/schiltern/)
 - [Wineries in Schönberg am Kamp](https://wineradar.net/austria/kamptal/village/schoenberg-am-kamp/)
 
-## Kremstal (168 wineries, 25 villages)
+## Kremstal (169 wineries, 25 villages)
 
 - [Kremstal wine region](https://wineradar.net/austria/kremstal/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/kremstal/map/)
@@ -188,7 +211,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Gösing am Wagram](https://wineradar.net/austria/wagram/village/goesing-am-wagram/)
 - [Wineries in Klosterneuburg](https://wineradar.net/austria/wagram/village/klosterneuburg/)
 
-## Weinviertel (495 wineries, 165 villages)
+## Weinviertel (497 wineries, 165 villages)
 
 - [Weinviertel wine region](https://wineradar.net/austria/weinviertel/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/weinviertel/map/)

@@ -975,3 +975,16 @@ ol.visits{padding-left:1.3em}ol.visits li{margin:6px 0}
 #trip .map.small{margin:10px 0 14px}
 ol.toplist{padding-left:1.6em;margin:6px 0 18px}ol.toplist li{margin:7px 0}ol.toplist li .num{display:block;color:var(--muted);font-size:.9rem}
 ol.toplist li:nth-child(-n+3)::marker{color:var(--gold);font-weight:700}
+
+/* Gemenskapen: konto, tips, upptäckare */
+.account,.community{margin:22px 0;padding:16px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.acc-form{display:flex;flex-direction:column;gap:10px;max-width:420px}
+.acc-form input[type=email],.acc-form input[name=nick],.acc-form select,.tip-form textarea{font:inherit;padding:10px 12px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);color:var(--ink);width:100%;box-sizing:border-box}
+.acc-form label{display:flex;flex-direction:column;gap:4px;font-size:.95rem}
+.acc-form label.chk{flex-direction:row;align-items:flex-start;gap:8px}
+.acc-form .btn{align-self:flex-start}
+.acc-msg,.tip-msg{min-height:1.2em;color:var(--accent)}
+ul.tips{list-style:none;padding:0;margin:8px 0}ul.tips li{padding:10px 0;border-bottom:1px solid var(--line)}ul.tips li p{margin:0 0 4px}
+.tip-form{display:flex;flex-direction:column;gap:8px;margin-top:10px}.tip-form .btn{align-self:flex-start}
+.cm-count{font-weight:600}
+.chips .chip.on{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
