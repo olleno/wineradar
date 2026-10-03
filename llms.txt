@@ -211,7 +211,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Gösing am Wagram](https://wineradar.net/austria/wagram/village/goesing-am-wagram/)
 - [Wineries in Klosterneuburg](https://wineradar.net/austria/wagram/village/klosterneuburg/)
 
-## Weinviertel (497 wineries, 165 villages)
+## Weinviertel (501 wineries, 165 villages)
 
 - [Weinviertel wine region](https://wineradar.net/austria/weinviertel/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/weinviertel/map/)
