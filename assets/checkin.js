@@ -28,6 +28,12 @@
     var v=load();
     if(v[D.slug]){st.textContent=fill(T.done,{d:v[D.slug].d});}
     btn.hidden=false;
+    var sb=c.querySelector('.ci-share');
+    if(sb){sb.hidden=false;sb.addEventListener('click',function(){
+      var txt=fill(T.wshare_txt,{name:D.name,town:D.town}),url='https://wineradar.net'+D.url;
+      if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'winery-share/'+D.rs+'/'+D.slug,title:D.name,event:true});
+      sendImage(wcard(T,D),txt,url,st,T);
+    });}
     btn.addEventListener('click',function(){
       if(!navigator.geolocation){st.textContent=T.nogeo;return;}
       btn.disabled=true;st.textContent=T.locating;
@@ -95,6 +101,33 @@
     won.slice(0,3).forEach(function(b,i){g.fillStyle=gold;g.fillText('★',W/2-g.measureText(b[0]).width/2-30,y+95+i*56);g.fillStyle=ink;g.fillText(b[0],W/2+10,y+95+i*56);});
     logo(g,W/2-205,1772,.55,ink);g.textAlign='left';g.fillStyle=ink;g.font='600 46px system-ui,sans-serif';g.fillText('wineradar.net',W/2-120,1822);
     return cv;
+  }
+  /* bild för att dela en enskild vingård: "Värd ett besök", namnet, orten och regionen, och loggan */
+  function wcard(T,D){
+    var W=1080,H=1920,cv=document.createElement('canvas');cv.width=W;cv.height=H;var g=cv.getContext('2d'),ink='#fcfbf9',gold='#ddb767';
+    var gr=g.createLinearGradient(0,0,0,H);gr.addColorStop(0,'#7a1a38');gr.addColorStop(1,'#3e0c1c');g.fillStyle=gr;g.fillRect(0,0,W,H);
+    logo(g,W/2-117,230,1.8,ink);
+    g.textAlign='center';g.fillStyle=ink;g.font='700 58px system-ui,sans-serif';g.fillText('WINE RADAR',W/2,530);
+    g.fillStyle=gold;g.font='700 46px system-ui,sans-serif';g.fillText(T.wtag,W/2,820);
+    g.fillStyle=ink;var size=110,w=D.name.split(' '),lines=[],line='';
+    do{g.font='800 '+size+'px system-ui,sans-serif';lines=[];line='';w.forEach(function(x){var t=line?line+' '+x:x;if(g.measureText(t).width>920&&line){lines.push(line);line=x;}else line=t;});lines.push(line);size-=8;}while((lines.length>3||lines.some(function(l){return g.measureText(l).width>960;}))&&size>50);
+    var y=980;lines.forEach(function(l){g.fillText(l,W/2,y);y+=size+18;});
+    g.globalAlpha=.85;g.font='500 52px system-ui,sans-serif';g.fillText(D.town+' · '+D.region,W/2,y+60);g.globalAlpha=1;
+    g.fillStyle=gold;g.beginPath();g.arc(W/2,y+190,14,0,7);g.fill();g.globalAlpha=.25;g.beginPath();g.arc(W/2,y+190,34,0,7);g.fill();g.globalAlpha=1;
+    logo(g,W/2-205,1772,.55,ink);g.textAlign='left';g.fillStyle=ink;g.font='600 46px system-ui,sans-serif';g.fillText('wineradar.net',W/2-120,1822);
+    return cv;
+  }
+  /* dela en bild via telefonens dela-meny; annars text med länk */
+  function sendImage(cv,txt,url,st,T){
+    function text(){
+      if(navigator.share){navigator.share({title:'Wine Radar',text:txt,url:url}).catch(function(){});return;}
+      try{navigator.clipboard.writeText(txt+' '+url).then(function(){st.textContent=T.copied;});}catch(e){st.textContent=txt+' '+url;}
+    }
+    try{cv.toBlob(function(b){
+      var f=b&&window.File?new File([b],'wine-radar.png',{type:'image/png'}):null;
+      if(f&&navigator.canShare&&navigator.canShare({files:[f]})){navigator.share({files:[f],text:txt+' '+url}).catch(function(){});}
+      else text();
+    },'image/png');}catch(e){text();}
   }
   function share(T,L,won){
     var st=document.querySelector('#trip .ci-status'),txt=fill(T.share_txt,{n:L.length}),url='https://wineradar.net/';
