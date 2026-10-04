@@ -27,7 +27,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Podersdorf am See](https://wineradar.net/austria/burgenland/village/podersdorf-am-see/)
 - [Wineries in Purbach am Neusiedler See](https://wineradar.net/austria/burgenland/village/purbach-am-neusiedler-see/)
 
-## Bergland (66 wineries, 51 villages)
+## Bergland (71 wineries, 54 villages)
 
 - [Bergland wine region](https://wineradar.net/austria/bergland/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/bergland/map/)
@@ -46,9 +46,9 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in St. Georgen am Längsee](https://wineradar.net/austria/bergland/village/st-georgen-am-laengsee/)
 - [Wineries in St. Paul im Lavanttal](https://wineradar.net/austria/bergland/village/st-paul-im-lavanttal/)
 - [Wineries in Tarrenz](https://wineradar.net/austria/bergland/village/tarrenz/)
+- [Wineries in Hatting](https://wineradar.net/austria/bergland/village/hatting/)
+- [Wineries in Pfunds](https://wineradar.net/austria/bergland/village/pfunds/)
 - [Wineries in St. Veit an der Glan](https://wineradar.net/austria/bergland/village/st-veit-an-der-glan/)
-- [Wineries in Wolfsberg](https://wineradar.net/austria/bergland/village/wolfsberg/)
-- [Wineries in Arzl im Pitztal](https://wineradar.net/austria/bergland/village/arzl-im-pitztal/)
 
 ## Carnuntum (73 wineries, 21 villages)
 
@@ -73,7 +73,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Petronell-Carnuntum](https://wineradar.net/austria/carnuntum/village/petronell-carnuntum/)
 - [Wineries in Wildungsmauer](https://wineradar.net/austria/carnuntum/village/wildungsmauer/)
 
-## Kamptal (157 wineries, 19 villages)
+## Kamptal (174 wineries, 20 villages)
 
 - [Kamptal wine region](https://wineradar.net/austria/kamptal/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/kamptal/map/)
@@ -92,9 +92,9 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Gobelsburg](https://wineradar.net/austria/kamptal/village/gobelsburg/)
 - [Wineries in Zöbing](https://wineradar.net/austria/kamptal/village/zoebing/)
 - [Wineries in Lengenfeld](https://wineradar.net/austria/kamptal/village/lengenfeld/)
+- [Wineries in Schönberg am Kamp](https://wineradar.net/austria/kamptal/village/schoenberg-am-kamp/)
 - [Wineries in Engabrunn](https://wineradar.net/austria/kamptal/village/engabrunn/)
 - [Wineries in Schiltern](https://wineradar.net/austria/kamptal/village/schiltern/)
-- [Wineries in Schönberg am Kamp](https://wineradar.net/austria/kamptal/village/schoenberg-am-kamp/)
 
 ## Kremstal (169 wineries, 25 villages)
 
@@ -119,7 +119,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Furth bei Göttweig](https://wineradar.net/austria/kremstal/village/furth-bei-goettweig/)
 - [Wineries in Höbenbach](https://wineradar.net/austria/kremstal/village/hoebenbach/)
 
-## Steiermark (280 wineries, 63 villages)
+## Steiermark (365 wineries, 68 villages)
 
 - [Steiermark wine region](https://wineradar.net/austria/steiermark/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/steiermark/map/)
@@ -137,10 +137,10 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Gamlitz](https://wineradar.net/austria/steiermark/village/gamlitz/)
 - [Wineries in Ehrenhausen an der Weinstraße](https://wineradar.net/austria/steiermark/village/ehrenhausen-an-der-weinstrasse/)
 - [Wineries in Sankt Anna am Aigen](https://wineradar.net/austria/steiermark/village/sankt-anna-am-aigen/)
-- [Wineries in Tieschen](https://wineradar.net/austria/steiermark/village/tieschen/)
 - [Wineries in Kitzeck im Sausal](https://wineradar.net/austria/steiermark/village/kitzeck-im-sausal/)
-- [Wineries in Klöch](https://wineradar.net/austria/steiermark/village/kloech/)
 - [Wineries in Sankt Stefan ob Stainz](https://wineradar.net/austria/steiermark/village/sankt-stefan-ob-stainz/)
+- [Wineries in Tieschen](https://wineradar.net/austria/steiermark/village/tieschen/)
+- [Wineries in Klöch](https://wineradar.net/austria/steiermark/village/kloech/)
 
 ## Thermenregion (152 wineries, 31 villages)
 
