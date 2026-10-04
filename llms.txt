@@ -73,7 +73,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Petronell-Carnuntum](https://wineradar.net/austria/carnuntum/village/petronell-carnuntum/)
 - [Wineries in Wildungsmauer](https://wineradar.net/austria/carnuntum/village/wildungsmauer/)
 
-## Kamptal (174 wineries, 20 villages)
+## Kamptal (178 wineries, 20 villages)
 
 - [Kamptal wine region](https://wineradar.net/austria/kamptal/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/kamptal/map/)
@@ -96,7 +96,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Engabrunn](https://wineradar.net/austria/kamptal/village/engabrunn/)
 - [Wineries in Schiltern](https://wineradar.net/austria/kamptal/village/schiltern/)
 
-## Kremstal (169 wineries, 25 villages)
+## Kremstal (172 wineries, 27 villages)
 
 - [Kremstal wine region](https://wineradar.net/austria/kremstal/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/kremstal/map/)
@@ -119,7 +119,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Furth bei Göttweig](https://wineradar.net/austria/kremstal/village/furth-bei-goettweig/)
 - [Wineries in Höbenbach](https://wineradar.net/austria/kremstal/village/hoebenbach/)
 
-## Steiermark (365 wineries, 68 villages)
+## Steiermark (431 wineries, 77 villages)
 
 - [Steiermark wine region](https://wineradar.net/austria/steiermark/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/steiermark/map/)
@@ -136,9 +136,9 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Leutschach an der Weinstraße](https://wineradar.net/austria/steiermark/village/leutschach-an-der-weinstrasse/)
 - [Wineries in Gamlitz](https://wineradar.net/austria/steiermark/village/gamlitz/)
 - [Wineries in Ehrenhausen an der Weinstraße](https://wineradar.net/austria/steiermark/village/ehrenhausen-an-der-weinstrasse/)
-- [Wineries in Sankt Anna am Aigen](https://wineradar.net/austria/steiermark/village/sankt-anna-am-aigen/)
-- [Wineries in Kitzeck im Sausal](https://wineradar.net/austria/steiermark/village/kitzeck-im-sausal/)
 - [Wineries in Sankt Stefan ob Stainz](https://wineradar.net/austria/steiermark/village/sankt-stefan-ob-stainz/)
+- [Wineries in Kitzeck im Sausal](https://wineradar.net/austria/steiermark/village/kitzeck-im-sausal/)
+- [Wineries in Sankt Anna am Aigen](https://wineradar.net/austria/steiermark/village/sankt-anna-am-aigen/)
 - [Wineries in Tieschen](https://wineradar.net/austria/steiermark/village/tieschen/)
 - [Wineries in Klöch](https://wineradar.net/austria/steiermark/village/kloech/)
 
@@ -165,7 +165,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Traiskirchen](https://wineradar.net/austria/thermenregion/village/traiskirchen/)
 - [Wineries in Pfaffstätten](https://wineradar.net/austria/thermenregion/village/pfaffstaetten/)
 
-## Traisental (90 wineries, 26 villages)
+## Traisental (91 wineries, 26 villages)
 
 - [Traisental wine region](https://wineradar.net/austria/traisental/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/traisental/map/)
@@ -211,7 +211,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Mautern an der Donau](https://wineradar.net/austria/wachau/village/mautern-an-der-donau/)
 - [Wineries in Joching](https://wineradar.net/austria/wachau/village/joching/)
 
-## Wagram (126 wineries, 36 villages)
+## Wagram (135 wineries, 38 villages)
 
 - [Wagram wine region](https://wineradar.net/austria/wagram/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/wagram/map/)
@@ -231,10 +231,10 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Kirchberg am Wagram](https://wineradar.net/austria/wagram/village/kirchberg-am-wagram/)
 - [Wineries in Engelmannsbrunn](https://wineradar.net/austria/wagram/village/engelmannsbrunn/)
 - [Wineries in Großweikersdorf](https://wineradar.net/austria/wagram/village/grossweikersdorf/)
+- [Wineries in Klosterneuburg](https://wineradar.net/austria/wagram/village/klosterneuburg/)
 - [Wineries in Ottenthal](https://wineradar.net/austria/wagram/village/ottenthal/)
-- [Wineries in Gösing am Wagram](https://wineradar.net/austria/wagram/village/goesing-am-wagram/)
 
-## Weinviertel (502 wineries, 165 villages)
+## Weinviertel (514 wineries, 171 villages)
 
 - [Weinviertel wine region](https://wineradar.net/austria/weinviertel/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/weinviertel/map/)
@@ -250,10 +250,10 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Books and guides](https://wineradar.net/austria/weinviertel/books-and-guides/)
 - [Wineries in Poysdorf](https://wineradar.net/austria/weinviertel/village/poysdorf/)
 - [Wineries in Röschitz](https://wineradar.net/austria/weinviertel/village/roeschitz/)
-- [Wineries in Auersthal](https://wineradar.net/austria/weinviertel/village/auersthal/)
 - [Wineries in Unterretzbach](https://wineradar.net/austria/weinviertel/village/unterretzbach/)
-- [Wineries in Hagenbrunn](https://wineradar.net/austria/weinviertel/village/hagenbrunn/)
+- [Wineries in Auersthal](https://wineradar.net/austria/weinviertel/village/auersthal/)
 - [Wineries in Hohenruppersdorf](https://wineradar.net/austria/weinviertel/village/hohenruppersdorf/)
+- [Wineries in Hagenbrunn](https://wineradar.net/austria/weinviertel/village/hagenbrunn/)
 - [Wineries in Retz](https://wineradar.net/austria/weinviertel/village/retz/)
 - [Wineries in Falkenstein](https://wineradar.net/austria/weinviertel/village/falkenstein/)
 
