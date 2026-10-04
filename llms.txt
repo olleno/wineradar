@@ -234,7 +234,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Ottenthal](https://wineradar.net/austria/wagram/village/ottenthal/)
 - [Wineries in Gösing am Wagram](https://wineradar.net/austria/wagram/village/goesing-am-wagram/)
 
-## Weinviertel (501 wineries, 165 villages)
+## Weinviertel (502 wineries, 165 villages)
 
 - [Weinviertel wine region](https://wineradar.net/austria/weinviertel/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/weinviertel/map/)
