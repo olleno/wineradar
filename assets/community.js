@@ -27,15 +27,16 @@
   /* telefonens besök -> [{region, winery, day}] (äldre besök saknar region: läses ur sidans adress) */
   function localVisits(){
     var v=local(),out=[];
-    Object.keys(v).forEach(function(k){var x=v[k],seg=(x.u||'').split('/').filter(Boolean);out.push({region:x.rs||seg[seg.length-3],winery:x.w||k,day:x.d});});
+    Object.keys(v).forEach(function(k){var x=v[k],seg=(x.u||'').split('/').filter(Boolean);out.push({region:x.rs||seg[seg.length-3],winery:x.w||k,day:x.d,wines:x.wines||[]});});
     return out;
   }
   /* kontots besök in i telefonen, så att Min vinresa visar allt även på en ny telefon */
   function syncDown(list){
     return wineries().then(function(W){
       var v=local(),added=0;
-      list.forEach(function(c){var w=W[c.region+'/'+c.winery];if(!w||v[c.winery])return;
-        v[c.winery]={n:w[3],t:w[4],r:w[5],rs:c.region,w:c.winery,lat:w[0],lon:w[1],u:w[6],d:c.day};added++;});
+      list.forEach(function(c){var w=W[c.region+'/'+c.winery];if(!w)return;
+        if(v[c.winery]){if(c.wines&&c.wines.length&&!(v[c.winery].wines||[]).length){v[c.winery].wines=c.wines;added++;}return;}
+        v[c.winery]={n:w[3],t:w[4],r:w[5],rs:c.region,w:c.winery,lat:w[0],lon:w[1],u:w[6],d:c.day,wines:c.wines||[]};added++;});
       if(added)put('wr-trip',JSON.stringify(v));
       return added;
     });
@@ -46,6 +47,10 @@
     checkin:function(region,winery,co){
       if(!sess())return Promise.resolve(null);
       return call('/checkins','POST',{region:region,winery:winery,lat:co.latitude,lon:co.longitude,acc:co.accuracy});
+    },
+    wines:function(region,winery,list){
+      if(!sess())return Promise.resolve(null);
+      return call('/checkins/wines','POST',{region:region,winery:winery,wines:list});
     }
   };
 

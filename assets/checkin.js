@@ -64,6 +64,7 @@
       function upd(){var f=inp.value.trim();viv.href='https://www.vivino.com/search/wines?q='+encodeURIComponent(tp.dataset.q+(f?' '+f:''));}
       inp.oninput=upd;upd();
       tp.querySelector('.ci-save').onclick=function(){var v=load();if(!v[D.slug])return;v[D.slug].wines=picked();save(v);msg.textContent=tp.dataset.saved;
+        if(window.WRC&&window.WRC.wines)window.WRC.wines(D.rs,D.slug,v[D.slug].wines);   /* inloggad: sparas också i kontot */
         if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'tasted/'+D.rs+'/'+D.slug,title:D.name,event:true});};
       viv.addEventListener('click',function(){if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'ut-vivino/'+D.rs+'/'+D.slug,title:D.name,event:true});});
     }
