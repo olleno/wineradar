@@ -50,6 +50,11 @@
         if(first&&window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'checkin/'+D.rs+'/'+D.slug,title:D.name,event:true});
       },function(){btn.disabled=false;st.textContent=T.nogeo;},{enableHighAccuracy:true,timeout:15000,maximumAge:0});
     });
+    /* ?in=1 (QR-skylten vid provningsdisken eller "Checka in" på startsidan): checka in direkt */
+    if(/[?&]in=1\b/.test(location.search)){
+      try{history.replaceState(null,'',location.pathname+location.hash);}catch(e){}
+      c.scrollIntoView({block:'center'});btn.click();
+    }
   }
 
   /* ---- sidan Min vinresa ---- */

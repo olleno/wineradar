@@ -993,3 +993,20 @@ ul.tips{list-style:none;padding:0;margin:8px 0}ul.tips li{padding:10px 0;border-
 .card.regcard figure.card-photo img{aspect-ratio:3/2}
 .card.off{color:var(--muted);cursor:default}
 .card.off:hover{border-color:var(--line)}
+/* startsidans levande del (home.js) */
+.live{margin:34px 0 10px}
+.live .box{background:var(--surface);border:1px solid var(--line);padding:16px 18px}
+.live .box h2{margin:0 0 10px;font-size:1.15rem}
+.live-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.live .feed{grid-column:1/-1}
+.feed-list,.ex-list,.nr-list{margin:0;padding-left:1.1em}
+.feed-list{list-style:none;padding:0}
+.feed-list li{padding:7px 0;border-bottom:1px solid var(--line)}
+.feed-list li:last-child{border-bottom:0}
+.ex-list li,.nr-list li{padding:5px 0}
+.nr{margin-bottom:14px}
+.nr-list .btn{margin-left:8px;padding:6px 12px;font-size:.85rem}
+.live .num{font-variant-numeric:tabular-nums;color:var(--muted);margin-left:4px}
+@media (min-width:900px){.live .feed{grid-column:span 2}}
+.ex-list li.muted{list-style:none;margin-left:-1.1em}
+.nr{scroll-margin-top:150px}
