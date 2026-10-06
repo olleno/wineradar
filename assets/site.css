@@ -663,13 +663,14 @@ svg.leaflet-image-layer.leaflet-interactive path {
 /* Layout: an editorial wine guide — confident grotesk headlines, wine-label serif accents, hairline rules, square edges.
    One bold thing per page: the vineyard-rows artwork on the hubs, the map everywhere else. */
 :root{
-  --bg:#fcfbf9; --surface:#ffffff; --ink:#171314; --muted:#6c6461; --line:#e6e0db; --line2:#d6cec8;
+  --bg:#f4f0e8; --surface:#fdfbf7; --ink:#171314; --muted:#6c6461; --line:#e6e0db; --line2:#d6cec8;
   --accent:#6b1631; --accent-ink:#ffffff; --accent-soft:#f5ecee; --vine:#466a35; --gold:#a2782a; --stay:#2d5f78;
   --lake:#c9dbe0; --land:#f1efe9; --road:#d9d3cc;
   --display:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
   --label:"Bodoni Moda",Didot,"Bodoni 72",Georgia,serif;
   --body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --hand:"Caveat","Segoe Print","Bradley Hand",cursive;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -1021,3 +1022,37 @@ ul.tips{list-style:none;padding:0;margin:8px 0}ul.tips li{padding:10px 0;border-
 .linkbtn{background:none;border:0;padding:0 0 0 .4em;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;font-size:.9em}
 .ci-want[aria-pressed="true"]{color:var(--accent);border-color:currentColor;background:var(--accent-soft)}
 #want{margin-top:2rem}
+
+/* ---- varmare ton: handskrift, papperskort, provningslapp, "Varför jag gör det här" ---- */
+.hand{font:600 1.45rem/1.1 var(--hand);color:var(--accent);letter-spacing:0}
+.hand.kicker{margin:0 0 .3rem;transform:rotate(-1.5deg);transform-origin:left;font-size:1.6rem}
+.hand-notes{display:flex;flex-wrap:wrap;gap:6px 26px;margin:-.4rem 0 1.1rem}
+.hand-notes .hand{display:inline-block;transform:rotate(-2deg)}
+.hand-notes .hand:nth-child(2){transform:rotate(1.5deg)}
+.hand-notes .hand::before{content:"↘ ";font-weight:500}
+.cards{gap:18px;border-top:0;padding-top:6px}
+.cards .card{background:var(--surface);border:0;border-top:3px solid var(--accent);padding:16px 20px 18px;box-shadow:0 1px 0 var(--line),0 8px 22px -12px rgba(60,30,20,.25);transition:transform .15s}
+.cards .card:nth-child(3n+1){transform:rotate(-.35deg)}
+.cards .card:nth-child(3n+2){transform:rotate(.3deg)}
+.cards .card:hover{transform:translateY(-2px) rotate(0)}
+.card.regcard figure.card-photo{margin:-16px -20px 12px}
+.hero-art{position:relative;min-width:0}
+.hero-art .art{width:100%}
+.slip{position:absolute;left:-28px;bottom:-34px;z-index:2;width:min(330px,82%);background:var(--surface);padding:12px 16px 10px;transform:rotate(-1.2deg);box-shadow:0 10px 30px -10px rgba(40,20,10,.35);border-top:3px solid var(--accent)}
+.slip-h{font:600 .72rem/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;display:flex;justify-content:space-between;align-items:baseline}
+.slip-h .ex{font-size:1.15rem;text-transform:none;letter-spacing:0}
+.slip ol{list-style:none;margin:0;padding:0;font:400 .82rem/1.35 var(--mono)}
+.slip li{padding:5px 0;border-bottom:1px solid var(--line);position:relative}
+.slip li b{font-weight:600}
+.slip .ok{color:var(--vine)}
+.slip .circ{display:block;position:relative;color:var(--accent);padding:2px 0 0 18px;width:max-content}
+.slip .circ svg{position:absolute;left:10px;top:-4px;width:calc(100% + 10px);height:calc(100% + 8px);overflow:visible}
+.slip .circ path{fill:none;stroke:var(--accent);stroke-width:2.2;stroke-linecap:round}
+.slip .q{margin:6px 0 0;text-align:right;transform:rotate(-1.5deg)}
+.art-note{margin:0 0 4px;text-align:right;transform:rotate(-1.5deg)}
+.art-note a{color:inherit;text-decoration:none}
+.why{max-width:640px;margin:3.5rem 0 1rem;padding:26px 28px;background:var(--surface);border-top:3px solid var(--accent);box-shadow:0 8px 22px -12px rgba(60,30,20,.25)}
+.why h2{margin-top:0}
+.why .sign{font-size:2.4rem;margin:.2rem 0 .4rem;transform:rotate(-4deg);transform-origin:left}
+@media (max-width:860px){.slip{position:relative;left:auto;bottom:auto;margin:-28px 14px 0;width:auto}}
+@media (prefers-reduced-motion:reduce){.cards .card{transition:none}}
