@@ -1010,3 +1010,9 @@ ul.tips{list-style:none;padding:0;margin:8px 0}ul.tips li{padding:10px 0;border-
 @media (min-width:900px){.live .feed{grid-column:span 2}}
 .ex-list li.muted{list-style:none;margin-left:-1.1em}
 .nr{scroll-margin-top:150px}
+/* "Vad provade du?" efter incheckningen */
+.ci-taste{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.ci-taste h3{margin:0 0 8px;font-size:1.05rem}
+.ci-taste .chip{cursor:pointer;font:inherit}
+.ci-taste .chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.ci-wine{width:100%;max-width:420px;padding:9px 10px;border:1px solid var(--line2);background:var(--surface);color:var(--ink);font:inherit}

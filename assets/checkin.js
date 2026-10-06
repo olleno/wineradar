@@ -42,14 +42,32 @@
         var m=dist(pos.coords.latitude,pos.coords.longitude,+D.lat,+D.lon),lim=+D.rad+Math.min(pos.coords.accuracy||0,500);
         if(m>lim){st.textContent=fill(T.far,{km:(m/1000).toFixed(m<10000?1:0)});return;}
         var v=load(),first=!v[D.slug];
-        v[D.slug]={n:D.name,t:D.town,r:D.region,rs:D.rs,w:D.slug,lat:+D.lat,lon:+D.lon,u:D.url,d:(v[D.slug]&&v[D.slug].d)||today()};
+        v[D.slug]={n:D.name,t:D.town,r:D.region,rs:D.rs,w:D.slug,lat:+D.lat,lon:+D.lon,u:D.url,d:(v[D.slug]&&v[D.slug].d)||today(),wines:(v[D.slug]&&v[D.slug].wines)||[]};
         if(window.WRC)window.WRC.checkin(D.rs,D.slug,pos.coords);   /* inloggad: sparas också i kontot (servern kontrollerar platsen igen) */
         save(v);
         st.textContent=fill(T.ok,{n:Object.keys(v).length});
-        c.classList.add('done');
+        c.classList.add('done');taste();
         if(first&&window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'checkin/'+D.rs+'/'+D.slug,title:D.name,event:true});
       },function(){btn.disabled=false;st.textContent=T.nogeo;},{enableHighAccuracy:true,timeout:15000,maximumAge:0});
     });
+    /* "Vad provade du?" efter incheckningen: druvor + fritt namn sparas i telefonen; Spara i Vivino söker på gården + vinet */
+    function taste(){
+      var tp=c.querySelector('.ci-taste');if(!tp)return;tp.hidden=false;
+      var inp=tp.querySelector('.ci-wine'),viv=tp.querySelector('.ci-vivino'),msg=tp.querySelector('.ci-tmsg');
+      var cur=(load()[D.slug]||{}).wines||[];
+      tp.querySelectorAll('.chip').forEach(function(b){if(cur.indexOf(b.textContent)>=0)b.setAttribute('aria-pressed','true');
+        b.onclick=function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');upd();};});
+      var free=cur.filter(function(w){return ![].some.call(tp.querySelectorAll('.chip'),function(b){return b.textContent===w;});});
+      if(free.length&&!inp.value)inp.value=free.join(', ');
+      function picked(){var a=[].filter.call(tp.querySelectorAll('.chip'),function(b){return b.getAttribute('aria-pressed')==='true';}).map(function(b){return b.textContent;});
+        var f=inp.value.trim();if(f)a.push(f);return a;}
+      function upd(){var f=inp.value.trim();viv.href='https://www.vivino.com/search/wines?q='+encodeURIComponent(tp.dataset.q+(f?' '+f:''));}
+      inp.oninput=upd;upd();
+      tp.querySelector('.ci-save').onclick=function(){var v=load();if(!v[D.slug])return;v[D.slug].wines=picked();save(v);msg.textContent=tp.dataset.saved;
+        if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'tasted/'+D.rs+'/'+D.slug,title:D.name,event:true});};
+      viv.addEventListener('click',function(){if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'ut-vivino/'+D.rs+'/'+D.slug,title:D.name,event:true});});
+    }
+    if(v[D.slug])taste();
     /* ?in=1 (QR-skylten vid provningsdisken eller "Checka in" på startsidan): checka in direkt */
     if(/[?&]in=1\b/.test(location.search)){
       try{history.replaceState(null,'',location.pathname+location.hash);}catch(e){}
@@ -69,7 +87,7 @@
       if(left.length)h+='<h3>'+esc(T2.next)+'</h3><ul class="badges">'+left.map(function(b){return '<li>'+esc(b[0])+'</li>';}).join('')+'</ul>';
       h+='<p><button class="btn" type="button" id="trip-share">'+esc(T2.share)+'</button> <span class="ci-status" aria-live="polite"></span></p>';
       h+='<h2>'+esc(T2.visited)+' <span class="num">'+L.length+'</span></h2><div id="map" class="map small" role="img" aria-label="'+esc(T2.visited)+'"></div><ol class="visits">'+
-        L.map(function(x){return '<li><a href="'+esc(x.u)+'">'+esc(x.n)+'</a> <span class="muted">'+esc(x.t)+' · '+esc(x.r)+' · <span class="num">'+esc(x.d)+'</span></span></li>';}).join('')+'</ol>';
+        L.map(function(x){return '<li><a href="'+esc(x.u)+'">'+esc(x.n)+'</a> <span class="muted">'+esc(x.t)+' · '+esc(x.r)+' · <span class="num">'+esc(x.d)+'</span></span>'+(x.wines&&x.wines.length?'<br><span class="muted">🍷 '+esc(x.wines.join(', '))+'</span>':'')+'</li>';}).join('')+'</ol>';
       box.innerHTML=h;
       var el=document.getElementById('map');
       if(el&&window.WR&&window.L){
