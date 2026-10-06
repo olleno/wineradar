@@ -22,7 +22,9 @@
   function wineries(){
     if(WIN)return Promise.resolve(WIN);
     var a=document.querySelector('script[src*="community.js"]'),base=a?a.src.replace(/community\.js.*$/,''):'/assets/';
-    return fetch(base+'wineries-api.json').then(function(r){return r.json();}).then(function(j){WIN=j;return j;});
+    /* alla länders vingårdar (startsidans bygge), annars bara det här landets */
+    return fetch('/assets/wineries-all.json').then(function(r){if(!r.ok)throw 0;return r.json();})
+      .catch(function(){return fetch(base+'wineries-api.json').then(function(r){return r.json();});}).then(function(j){WIN=j;return j;});
   }
   /* telefonens besök -> [{region, winery, day}] (äldre besök saknar region: läses ur sidans adress) */
   function localVisits(){
@@ -31,8 +33,13 @@
     return out;
   }
   /* kontots besök in i telefonen, så att Min vinresa visar allt även på en ny telefon */
-  function syncDown(list){
+  function localWants(){var w={};try{w=JSON.parse(get('wr-want')||'{}')||{};}catch(e){}return Object.keys(w).map(function(k){return {region:w[k].rs,winery:k};});}
+  function syncDown(list,wants){
     return wineries().then(function(W){
+      var wl={};try{wl=JSON.parse(get('wr-want')||'{}')||{};}catch(e){}var wa=0;
+      (wants||[]).forEach(function(c){var w=W[c.region+'/'+c.winery];if(!w||wl[c.winery])return;
+        wl[c.winery]={n:w[3],t:w[4],r:w[5],rs:c.region,w:c.winery,lat:w[0],lon:w[1],u:w[6],a:c.day||''};wa++;});
+      if(wa)put('wr-want',JSON.stringify(wl));
       var v=local(),added=0;
       list.forEach(function(c){var w=W[c.region+'/'+c.winery];if(!w)return;
         if(v[c.winery]){if(c.wines&&c.wines.length&&!(v[c.winery].wines||[]).length){v[c.winery].wines=c.wines;added++;}return;}
@@ -47,6 +54,10 @@
     checkin:function(region,winery,co){
       if(!sess())return Promise.resolve(null);
       return call('/checkins','POST',{region:region,winery:winery,lat:co.latitude,lon:co.longitude,acc:co.accuracy});
+    },
+    want:function(region,winery,on){
+      if(!sess())return Promise.resolve(null);
+      return call('/wants','POST',{region:region,winery:winery,on:!!on});
     },
     wines:function(region,winery,list){
       if(!sess())return Promise.resolve(null);
@@ -63,8 +74,8 @@
     ready=call('/auth/verify','POST',{token:m[1]}).then(function(r){
       if(r.j.session){
         put('wr-session',r.j.session);
-        return call('/me/import','POST',{visits:localVisits()}).then(function(){return call('/me');}).then(function(me){
-          return syncDown((me.j&&me.j.checkins)||[]).then(function(){put('wr-flash',T.imported);location.reload();return new Promise(function(){});});
+        return call('/me/import','POST',{visits:localVisits(),wants:localWants()}).then(function(){return call('/me');}).then(function(me){
+          return syncDown((me.j&&me.j.checkins)||[],(me.j&&me.j.wants)||[]).then(function(){put('wr-flash',T.imported);location.reload();return new Promise(function(){});});
         });
       }
       put('wr-flash',errText(r.j.error));

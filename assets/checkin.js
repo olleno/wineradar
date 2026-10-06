@@ -9,6 +9,10 @@
   function fill(s,o){return String(s).replace(/\{(\w+)\}/g,function(_,k){return o[k]!=null?o[k]:'';});}
   function dist(a,b,c,d){var R=6371000,r=Math.PI/180,x=(d-b)*r*Math.cos((a+c)/2*r),y=(c-a)*r;return Math.sqrt(x*x+y*y)*R;}
   function today(){var d=new Date();return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+  /* "Vill besöka": egen lista i telefonen ('wr-want'); inloggad sparas den också i kontot */
+  var WKEY='wr-want';
+  function loadW(){try{return JSON.parse(localStorage.getItem(WKEY)||'{}')||{};}catch(e){return {};}}
+  function saveW(v){try{localStorage.setItem(WKEY,JSON.stringify(v));}catch(e){}}
   function list(v){return Object.keys(v).map(function(k){var x=v[k];x.s=k;return x;}).sort(function(a,b){return a.d<b.d?1:a.d>b.d?-1:0;});}
 
   /* märken: [nyckel, uppnått?] – namnen kommer från sidans språk */
@@ -34,6 +38,18 @@
       if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'winery-share/'+D.rs+'/'+D.slug,title:D.name,event:true});
       sendImage(wcard(T,D),txt,url,st,T);
     });}
+    var wb=c.querySelector('.ci-want');
+    if(wb){
+      var wset=function(on){wb.textContent=on?wb.dataset.on:wb.dataset.off;wb.setAttribute('aria-pressed',on?'true':'false');};
+      wset(!!loadW()[D.slug]);wb.hidden=false;
+      wb.addEventListener('click',function(){
+        var w=loadW(),on=!w[D.slug];
+        if(on)w[D.slug]={n:D.name,t:D.town,r:D.region,rs:D.rs,w:D.slug,lat:+D.lat,lon:+D.lon,u:D.url,a:today()};else delete w[D.slug];
+        saveW(w);wset(on);
+        if(window.WRC&&window.WRC.want)window.WRC.want(D.rs,D.slug,on);
+        if(on&&window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:'want/'+D.rs+'/'+D.slug,title:D.name,event:true});
+      });
+    }
     btn.addEventListener('click',function(){
       if(!navigator.geolocation){st.textContent=T.nogeo;return;}
       btn.disabled=true;st.textContent=T.locating;
@@ -98,6 +114,25 @@
       }else if(el)el.remove();
       document.getElementById('trip-share').addEventListener('click',function(){share(T2,L,won);});
     }
+    wantList(t,V);
+  }
+  /* "Vill besöka" på sidan Min vinresa: lista + karta, besökta markeras */
+  function wantList(t,V){
+    var TW=JSON.parse(t.dataset.want||'{}'),sec=document.createElement('section');sec.id='want';t.appendChild(sec);
+    function draw(){
+      var Wn=loadW(),WL=Object.keys(Wn).map(function(k){var x=Wn[k];x.s=k;return x;}).sort(function(a,b){return a.a<b.a?1:a.a>b.a?-1:0;});
+      if(!WL.length){sec.innerHTML='<h2>'+esc(TW.h)+'</h2><p class="note">'+esc(TW.empty)+'</p>';return;}
+      sec.innerHTML='<h2>'+esc(TW.h)+' <span class="num">'+WL.length+'</span></h2><div id="wmap" class="map small" role="img" aria-label="'+esc(TW.h)+'"></div><ol class="visits">'+
+        WL.map(function(x){return '<li><a href="'+esc(x.u)+'">'+esc(x.n)+'</a> <span class="muted">'+esc(x.t)+' · '+esc(x.r)+(V[x.s]?' · ✓ '+esc(TW.visited):'')+'</span> <button type="button" class="linkbtn" data-rm="'+esc(x.s)+'">'+esc(TW.remove)+'</button></li>';}).join('')+'</ol>';
+      var el=document.getElementById('wmap'),pts=WL.filter(function(x){return isFinite(x.lat)&&isFinite(x.lon);});
+      if(el&&window.WR&&window.L&&pts.length){
+        try{var map=WR.map(el);pts.forEach(function(x){WR.marker([x.lat,x.lon,x.n,x.t,0,1,x.u,1,'w']).addTo(map);});
+          map.fitBounds(pts.map(function(x){return [x.lat,x.lon];}),{padding:[30,30],maxZoom:13});}catch(e){el.remove();}
+      }else if(el)el.remove();
+    }
+    sec.addEventListener('click',function(e){var k=e.target.dataset&&e.target.dataset.rm;if(!k)return;
+      var w=loadW(),x=w[k];delete w[k];saveW(w);if(x&&window.WRC&&window.WRC.want)window.WRC.want(x.rs,k,false);draw();});
+    draw();
   }
 
   /* Wine Radars märke (glaset med radarbågar), samma som i sidhuvudet; ritas i rutan 130×120 */
