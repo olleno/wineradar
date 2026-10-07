@@ -196,7 +196,7 @@ Languages: English (main), German, Dutch, Swedish and 19 more. Methods: https://
 - [Wineries in Sitzenberg-Reidling](https://wineradar.net/austria/traisental/village/sitzenberg-reidling/)
 - [Wineries in Wölbling](https://wineradar.net/austria/traisental/village/woelbling/)
 
-## Wachau (193 wineries, 16 villages)
+## Wachau (192 wineries, 16 villages)
 
 - [Wachau wine region](https://wineradar.net/austria/wachau/): overview, grapes, sub-regions
 - [Map of all wineries](https://wineradar.net/austria/wachau/map/)
