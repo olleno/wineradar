@@ -10,16 +10,19 @@
     if(q){window.scrollTo({top:0,behavior:'smooth'});setTimeout(function(){q.focus();},250);}
   });
   /* Klick ut från sajten räknas i GoatCounter som händelser, sorterade efter vart de går
-     (ut-plus = Plus-formuläret, ut-booking/ut-gyg = affiliate, ut-karta = vägbeskrivning, ut-vingard = vingårdens sajt). */
+     (ut-plus = Plus-formuläret, ut-booking/ut-gyg = affiliate, ut-karta = vägbeskrivning, ut-bok = bokhandel, ut-butik = vinbutik, ut-vingard = vingårdens sajt). */
   document.addEventListener('click',function(e){
     var a=e.target.closest&&e.target.closest('a[href^="http"]');
     if(!a||a.host===location.host||!window.goatcounter||!window.goatcounter.count)return;
     var h=a.hostname.replace(/^www\./,''),k;
+    if(/(^|\.)wineradar\.net$/.test(h))return;   /* egna sajter (france.wineradar.net m.fl.) är inte klick ut */
     if(/tally\.so|stripe\.com/.test(h))k='ut-plus';
     else if(/booking\.com/.test(h))k='ut-booking';
     else if(/getyourguide/.test(h))k='ut-gyg';
     else if(/google\.[a-z.]+$/.test(h)&&/maps/.test(a.pathname))k='ut-karta';
     else if(/wine-searcher|vivino|cellartracker|falstaff|gaultmillau|vinea/.test(h))k='ut-guide';
+    else if(/(^|\.)amazon\./.test(h))k='ut-bok';
+    else if(/systembolaget|vinmonopolet|alko\.fi|saq\.com|lcbo/.test(h))k='ut-butik';
     else if(/skyscanner|kiwi|google\.[a-z.]+$/.test(h))k='ut-resa';
     else k='ut-vingard';
     window.goatcounter.count({path:k+'/'+h,title:location.pathname,event:true});
