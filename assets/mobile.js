@@ -16,7 +16,8 @@
     if(!a||a.host===location.host||!window.goatcounter||!window.goatcounter.count)return;
     var h=a.hostname.replace(/^www\./,''),k;
     if(/(^|\.)wineradar\.net$/.test(h))return;   /* egna sajter (france.wineradar.net m.fl.) är inte klick ut */
-    if(/tally\.so|stripe\.com/.test(h))k='ut-plus';
+    if(/instagram\.com|facebook\.com|pinterest\.[a-z.]+$/.test(h))k='ut-social';
+    else if(/tally\.so|stripe\.com/.test(h))k='ut-plus';
     else if(/booking\.com/.test(h))k='ut-booking';
     else if(/getyourguide/.test(h))k='ut-gyg';
     else if(/google\.[a-z.]+$/.test(h)&&/maps/.test(a.pathname))k='ut-karta';
